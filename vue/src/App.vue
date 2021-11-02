@@ -20,7 +20,7 @@ body {
 }
 .sp-token-send__holder .sp-token-send .sp-token-send__main__form .sp-token-send__main__rcpt__wrapper .sp-token-send__main__rcpt__memo__btn,.sp-token-send__holder .sp-token-send .sp-token-send__main__form .sp-amount-select .sp-form-group .sp-amount-select__denom .sp-amount-select__denom__selected
 {
-	color: #000;
+	color: #fff;
 	opacity: 1;
 }
  #app {
@@ -216,6 +216,18 @@ body {
     border-radius: .4rem;
     height: .8rem;
     flex: 1;
+}
+.sp-token-send__holder .sp-token-send .sp-token-send__main__form .sp-amount-select .sp-form-group .sp-input:last-child{
+color:white;
+border:none !important;
+}
+
+.sp-input .sp-input-large{
+color:#fff;
+}
+
+.sp-form-group .sp-input:first-child{
+border:none !important;
 }
  
 </style>
