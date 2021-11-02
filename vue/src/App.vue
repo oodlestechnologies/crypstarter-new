@@ -24,21 +24,21 @@ body {
 	opacity: 1;
 }
  #app {
-	 background: #181631;
+	 background: #171622;
 }
  .sp-sidebar {
 	 height: 100vh;
-	 background: #202144;
+	 background:  #171622;
 	 color: white;
 	 font-size: 16px;
 	 display: none;
 }
  .sp-box {
-	 background: #202144;
+	 background: #212130;
 }
  .sp-button {
-	 background: linear-gradient(90deg, #8437f7 0%, #0571ff 100%);
-	 border: none;
+    background: #E649EE;
+    border: none;
 }
  .sp-fill {
 	 padding-top: 11rem;
@@ -46,15 +46,15 @@ body {
  .sp-wallet-create {
 	 width: 35rem;
 	 max-height: 95vh;
-	 background: #202144;
+	 background:  #171622;
 	 overflow: auto;
 }
  .sp-card.sp-card-primary {
-	 background: linear-gradient(90deg, #8437f7 0%, #0571ff 100%);
-	 border: none;
+	 background: #E649EE;
+    border: none;
 }
  .sp-button.sp-button-primary {
-	 background: linear-gradient(90deg, #8437f7 0%, #0571ff 100%)!important;
+	 background: #FEC007!important;
 	 border: none!important;
 }
  .sp-button.sp-button-secondary {
@@ -97,7 +97,7 @@ body {
 	 z-index: auto;
 }
  .sp-transfer-list .sp-transfer-list__table .sp-transfer-list__status .sp-transfer-list__status__wrapper .sp-transfer-list__status__icon.sp-transfer-list__status__icon__empty {
-	 background: linear-gradient(90deg, #8437f7 0%, #0571ff 100%);
+	 background: #FEC007;
 }
  .sp-button:disabled {
 	 cursor: not-allowed;
@@ -121,18 +121,19 @@ body {
 	 opacity: initial;
 }
  .sp-card.sp-card-secondary {
-	 background: linear-gradient(90deg, #8437f7 0%, #0571ff 100%);
-	 color: #fff;
+	 background: #E649EE;
+     border: none;
+	 color:#fff;
 }
  .sp-textarea {
 	 background: #a1a6f5;
 }
  .sp-input {
-	 background: #a1a6f5;
+	 background: #34344B;
 }
  .sp-token-send__holder .sp-token-send .sp-token-send__main__form .sp-token-send__main__rcpt__wrapper .sp-token-send__main__rcpt__icon {
-	 color: white;
-	 background: linear-gradient(90deg, #8437f7 0%, #0571ff 100%);
+	color: #181631;
+    background: #FEC007;
 }
  .sp-box .sp-box-header {
 	 opacity: initial;
@@ -161,7 +162,7 @@ body {
  .custom-header img {
 	 vertical-align: middle;
 	 height: 40px;
-	 width: 40px;
+	 width: 200px;
 	 margin-right: 10px;
 	 margin-top: -5px
 }
@@ -178,10 +179,6 @@ body {
 		 width: 40px;
 		 overflow: hidden;
 		 white-space: nowrap;
-	}
-	 .custom-header img {
-		 height: 40px;
-		 width: 40px;
 	}
 	 .sp-wallet-create {
 		 width: 100%;
@@ -206,13 +203,19 @@ body {
 }
 
  .sp-wallet-menu {
-	 background: #202144;
+	 background:  #171622;
 }
  .sp-header-text {
 	 color: white;
 }
  input {
 	 color: black;
+}
+.sp-dummy-fill {
+    background: rgb(17 17 17);
+    border-radius: .4rem;
+    height: .8rem;
+    flex: 1;
 }
  
 </style>

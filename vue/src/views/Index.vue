@@ -2,7 +2,6 @@
 	<div>
 		<div class="custom-header">
 		<img :src="image" />
-		<p>Crypstarter</p>
 		</div>
 		<div class="container">
 
@@ -18,7 +17,7 @@ export default {
 
 	   data() {
    		return {
-   		image:require("/public/Mask Group.svg"),
+   		image:require("/public/Crypstarter Logo in SVG.svg"),
 
    		}
    	},
