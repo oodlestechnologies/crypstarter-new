@@ -230,6 +230,30 @@ color:#fff;
 border:none !important;
 }
 
+.sp-token-send__holder{
+     display: flex!important;
+    flex-wrap: wrap!important;
+    margin-right: -15px;
+    margin-left: -15px;
+    width: 100%;
+	flex-direction:row !important;
+}
+.sp-token-send__holder .sp-token-send{
+    flex: 0 0 50%!important;
+    max-width: 50%!important;
+    position: relative!important;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.sp-component.sp-assets__wrapper{
+    flex: 0 0 50%!important;
+    max-width: 50%!important;
+    position: relative!important;
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+
  
 </style>
 
