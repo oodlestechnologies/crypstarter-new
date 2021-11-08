@@ -256,6 +256,9 @@ border:none !important;
 
 .sp-assets__main{
 background: #17A2B8 !important;
+height: 180px;
+font-weight: 600;
+font-size: 22px;
 } 
 
 input{
@@ -269,6 +272,10 @@ color:#fff !important;
 
 .sp-shadow{
 box-shadow:none !important;
+}
+
+.sp-amount-select__denom {
+    display: none !important;
 }
 </style>
 
