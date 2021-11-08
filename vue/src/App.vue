@@ -254,7 +254,22 @@ border:none !important;
 
 }
 
- 
+.sp-assets__main{
+background: #17A2B8 !important;
+} 
+
+input{
+color:#fff !important;
+}
+
+.sp-transfer-list .sp-transfer-list__table .sp-transfer-list__status .sp-transfer-list__status__wrapper .sp-transfer-list__status__icon.sp-transfer-list__status__icon__received{
+    color: #181631;
+    background: #FEC007;
+}
+
+.sp-shadow{
+box-shadow:none !important;
+}
 </style>
 
 <script>
