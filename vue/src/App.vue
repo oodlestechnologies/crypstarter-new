@@ -277,6 +277,18 @@ box-shadow:none !important;
 .sp-amount-select__denom {
     display: none !important;
 }
+
+.sp-text.sp-bold.sp-active {
+    color: #17A2B8;
+}
+
+.sp-icon.sp-icon-Lock {
+    color: #17A2B8;
+}
+
+.sp-icon.sp-icon-Unlock {
+	color: #17A2B8;
+}
 </style>
 
 <script>
