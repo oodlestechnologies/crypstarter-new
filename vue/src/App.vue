@@ -9,9 +9,8 @@
 				<router-view />
 			</template>
 		</SpLayout>
-	</div>
+	</div>	
 </template>
-
 <style>
 body {
 	 margin: 0;
@@ -150,7 +149,7 @@ body {
 	 top: 20px;
 	 left: 20px;
 	 z-index: 99;
-    background: #181631;
+    background: #171622;
 }
  .custom-header p {
 	 position: static;
@@ -168,7 +167,7 @@ body {
 }
  @media (max-width: 767px) {
 	 .custom-header {
-		 top: 15px;
+		 top: 70px;
 		 left: 5px;
 	}
 	.sp-transfer-list .sp-transfer-list__table td.sp-transfer-list__table__address
@@ -188,18 +187,30 @@ body {
 		 top: 0;
 		 right: 0;
 	}
+	.sp-token-send__holder .sp-component.sp-assets__wrapper {
+    flex: 0 0 100%!important;
+    max-width: 100%!important;
+	}
+
+	.sp-token-send__holder .sp-component.sp-token-send {
+    flex: 0 0 100%!important;
+    max-width: 100%!important;
+	}
+	.custom-header{
+		flex: 0 0 100%!important;
+		max-width: 100%!important;
+	}
 }
  @media (max-width: 500px) {
-	 .custom-header {
+	 /* .custom-header {
 		 display: none;
-	}
+	} */
 	.sp-wallet,.sp-wallet-menu.sp-opened {
     width: 100%;
-}
-.sp-wallet-menu
-{
+	}
+.sp-wallet-menu{
 	max-width: 100%;
-}
+	}
 }
 
  .sp-wallet-menu {
@@ -229,7 +240,6 @@ color:#fff;
 .sp-form-group .sp-input:first-child{
 border:none !important;
 }
-
 .sp-token-send__holder{
      display: flex!important;
     flex-wrap: wrap!important;
@@ -237,22 +247,23 @@ border:none !important;
     margin-left: -15px;
     width: 100%;
 	flex-direction:row !important;
-}
+	}
+
 .sp-token-send__holder .sp-token-send{
     flex: 0 0 50%!important;
-    max-width: 50%!important;
+    max-width: 50%;
     position: relative!important;
     padding-right: 15px;
     padding-left: 15px;
-}
-.sp-component.sp-assets__wrapper{
-    flex: 0 0 50%!important;
-    max-width: 50%!important;
-    position: relative!important;
-    padding-right: 15px;
-    padding-left: 15px;
+	}
 
-}
+.sp-component.sp-assets__wrapper{
+	flex: 0 0 50%!important;
+    max-width: 50%;
+    position: relative!important;
+    padding-right: 15px;
+    padding-left: 15px;
+	}
 
 .sp-assets__main{
 background: #17A2B8 !important;
@@ -288,6 +299,23 @@ box-shadow:none !important;
 
 .sp-icon.sp-icon-Unlock {
 	color: #17A2B8;
+}
+
+.explorer {
+  border: none !important;
+  background-color: #171622;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  
+}
+
+.custom-header a{
+	color: #fff;
+	text-decoration: none;
+	border: 1px solid #e6e3de69;
+	padding: 5px 20px;
+	border-radius: 5px;
 }
 </style>
 
