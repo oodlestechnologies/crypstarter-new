@@ -2,7 +2,9 @@
 	<div>
 		<div class="custom-header">
 		<img :src="image" />
-		<button class="explorer"><a href="http://explorer.crypstarter.network/" target="_blank">Explorer</a></button>
+		</div>
+		<div class="custom-header1">
+			<button class="explorer"><a href="http://explorer.crypstarter.network/" target="_blank">Explorer</a></button>
 		</div>
 		<div class="container">
 			<SpTokenSend :address="address" />

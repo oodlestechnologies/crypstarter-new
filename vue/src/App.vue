@@ -64,9 +64,9 @@ body {
  .sp-link-icon .sp-link-icon-wrapper {
 	 color: white;
 }
- .sp-transfer-list .sp-transfer-list__table .sp-transfer-list__status .sp-transfer-list__status__wrapper .sp-transfer-list__status__icon.sp-transfer-list__status__icon__empty {
+ /* .sp-transfer-list .sp-transfer-list__table .sp-transfer-list__status .sp-transfer-list__status__wrapper .sp-transfer-list__status__icon.sp-transfer-list__status__icon__empty {
 	 color: white;
-}
+} */
  .sp-component-title span {
 	 display: block;
 	 opacity: initial;
@@ -97,6 +97,9 @@ body {
 }
  .sp-transfer-list .sp-transfer-list__table .sp-transfer-list__status .sp-transfer-list__status__wrapper .sp-transfer-list__status__icon.sp-transfer-list__status__icon__empty {
 	 background: #FEC007;
+	 color: black;
+	 height: 39px;
+	 width: 39px;
 }
  .sp-button:disabled {
 	 cursor: not-allowed;
@@ -133,6 +136,8 @@ body {
  .sp-token-send__holder .sp-token-send .sp-token-send__main__form .sp-token-send__main__rcpt__wrapper .sp-token-send__main__rcpt__icon {
 	color: #181631;
     background: #FEC007;
+	height: 38px;
+	width: 38px;
 }
  .sp-box .sp-box-header {
 	 opacity: initial;
@@ -151,6 +156,15 @@ body {
 	 z-index: 99;
     background: #171622;
 }
+
+ .custom-header1{
+	 display: flex;
+	 position: absolute;
+	 top: 20px;
+	 left: 20px;
+	 z-index: 99;
+
+ }
  .custom-header p {
 	 position: static;
 	 vertical-align: middle;
@@ -200,6 +214,13 @@ body {
 		flex: 0 0 100%!important;
 		max-width: 100%!important;
 	}
+	.explorer {
+  margin-left: 117px !important;
+}
+ .custom-header1{
+	 top: 5px !important;
+ }
+
 }
  @media (max-width: 500px) {
 	 /* .custom-header {
@@ -301,21 +322,36 @@ box-shadow:none !important;
 	color: #17A2B8;
 }
 
-.explorer {
-  border: none !important;
+/* .explorer {
   background-color: #171622;
+  border: 1px solid #707070;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
   font-size: 16px;
+  margin-left: 802px;
   cursor: pointer;
-  display: block;
-  
+  border-radius: 5px;
+} */
+
+.explorer {
+  background-color: #171622;
+  border: 1px solid #707070;
+  padding: 15px 76px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 718px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-.custom-header a{
+
+.custom-header1 a{
 	color: #fff;
 	text-decoration: none;
-	border: 1px solid #e6e3de69;
-	padding: 5px 20px;
-	border-radius: 5px;
 }
 </style>
 
