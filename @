@@ -20,4 +20,4 @@ genesis:
       params:
         bond_denom: "CST"
 build:
-  main: "cmd/wasmd/cmd/wasmd"
+  main: "cmd/wasmd"
