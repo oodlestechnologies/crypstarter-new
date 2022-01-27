@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="588" height="336" viewBox="0 0 588 336">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1" y1="0.052" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#17a2b9"/>
+      <stop offset="1" stop-color="#1b8a9d"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_210" data-name="Rectangle 210" width="588" height="336" transform="translate(-10652 1010)" fill="url(#linear-gradient)"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_6" data-name="Mask Group 6" transform="translate(10652 -1010)" clip-path="url(#clip-path)">
+    <g id="Group_350" data-name="Group 350" transform="translate(395 444)">
+      <rect id="Rectangle_207" data-name="Rectangle 207" width="588" height="336" transform="translate(-11047 566)" fill="url(#linear-gradient)"/>
+      <line id="Line_46" data-name="Line 46" x2="162" y2="254" transform="translate(-11051.5 673.5)" fill="none" stroke="#3ab7cd" stroke-width="1"/>
+      <line id="Line_47" data-name="Line 47" x2="162" y2="254" transform="translate(-11069.5 683.5)" fill="none" stroke="#3ab7cd" stroke-width="1"/>
+      <line id="Line_48" data-name="Line 48" x2="162" y2="254" transform="translate(-11088.5 693.5)" fill="none" stroke="#3ab7cd" stroke-width="1"/>
+      <g id="Ellipse_77" data-name="Ellipse 77" transform="translate(-10646 424)" fill="none" stroke="#707070" stroke-width="1">
+        <circle cx="104.5" cy="104.5" r="104.5" stroke="none"/>
+        <circle cx="104.5" cy="104.5" r="104" fill="none"/>
+      </g>
+      <circle id="Ellipse_75" data-name="Ellipse 75" cx="23.5" cy="23.5" r="23.5" transform="translate(-10579 604)" fill="#52d4ef" opacity="0.56"/>
+      <circle id="Ellipse_76" data-name="Ellipse 76" cx="23.5" cy="23.5" r="23.5" transform="translate(-10550 604)" fill="#52d4ef" opacity="0.56"/>
+      <g id="Ellipse_78" data-name="Ellipse 78" transform="translate(-10697 373)" fill="none" stroke="#707070" stroke-width="1">
+        <circle cx="155.5" cy="155.5" r="155.5" stroke="none"/>
+        <circle cx="155.5" cy="155.5" r="155" fill="none"/>
+      </g>
+      <rect id="Rectangle_209" data-name="Rectangle 209" width="151" height="151" rx="15" transform="translate(-10499.292 723.954) rotate(45)" fill="#2ab0c9"/>
+    </g>
+  </g>
+</svg>
