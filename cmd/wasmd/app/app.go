@@ -107,7 +107,7 @@ const appName = "WasmApp"
 
 // We pull these out so we can set them with LDFLAGS in the Makefile
 var (
-	NodeDir      = ".wasmd"
+	NodeDir      = ".crypstarter"
 	Bech32Prefix = "cst"
 
 	// If EnabledSpecificProposals is "", and this is "true", then enable all x/wasm proposals.

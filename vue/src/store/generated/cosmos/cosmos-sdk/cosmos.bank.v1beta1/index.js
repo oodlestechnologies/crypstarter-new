@@ -84,7 +84,6 @@ export default {
     },
     getters: {
         getBalance: (state) => (params = { params: {} }) => {
-        
             if (!params.query) {
                 params.query = null;
             }
@@ -169,21 +168,9 @@ export default {
             }
         },
         async QueryAllBalances({ commit, rootGetters, getters }, { options: { subscribe, all } = { subscribe: false, all: false }, params: { ...key }, query = null }) {
-         
             try {
                 const queryClient = await initQueryClient(rootGetters);
                 let value = (await queryClient.queryAllBalances(key.address, query)).data;
-               
-                for(let i of value.balances)
-                {   const p2 = 1000000
-                    i.amount = 	i.amount / p2
-                    // i.amount =  i.amount.toFixed(6)
-                    i.amount = i.amount.toLocaleString(undefined, { minimumFractionDigits: 1, maximumFractionDigits: 6 })
-                }
-                if(value.balances.length < 1){
-                    value.balances[0] = {'denom':"CST","amount":0}
-                }
-                // console.log(value)
                 while (all && value.pagination && value.pagination.nextKey != null) {
                     let next_values = (await queryClient.queryAllBalances(key.address, { ...query, 'pagination.key': value.pagination.nextKey })).data;
                     value = mergeResults(value, next_values);

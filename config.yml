@@ -20,4 +20,4 @@ genesis:
       params:
         bond_denom: "CST"
 build:
-  main: "cmd/crypstarterd"
+  main: "cmd/wasmd/cmd/wasmd"
