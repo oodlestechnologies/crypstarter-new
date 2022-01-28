@@ -19,5 +19,3 @@ genesis:
     staking:
       params:
         bond_denom: "CST"
-build:
-  main: "cmd/wasmd/cmd/wasmd"

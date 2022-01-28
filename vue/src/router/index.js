@@ -1,10 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Index from '@/views/Index.vue'
 import Types from '@/views/Types.vue'
-import Staking from '@/views/Staking.vue'
-import Unstaking from '@/views/Unstaking.vue'
-import Withdraw from '@/views/Withdraw.vue'
-// import Footer from '@/views/Footer.vue'
+import Relayers from '@/views/Relayers.vue'
 
 const routerHistory = createWebHistory()
 const routes = [
@@ -13,9 +10,7 @@ const routes = [
 		component: Index
 	},
 	{ path: '/types', component: Types },
-	{ path: '/Staking', component: Staking },
-	{ path: '/Unstaking', component:Unstaking},
-	{ path: '/Withdraw', component:Withdraw}
+	{ path: '/relayers', component: Relayers }
 ]
 
 const router = createRouter({

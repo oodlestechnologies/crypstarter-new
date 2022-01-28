@@ -1,5 +1,5 @@
-# crypstarter
-**crypstarter** is a blockchain built using Cosmos SDK and Tendermint and created with [Starport](https://github.com/tendermint/starport).
+# crypstartertestnet
+**crypstartertestnet** is a blockchain built using Cosmos SDK and Tendermint and created with [Starport](https://github.com/tendermint/starport).
 
 ## Get started
 
@@ -43,9 +43,9 @@ After a draft release is created, make your final changes from the release page 
 To install the latest version of your blockchain node's binary, execute the following command on your machine:
 
 ```
-curl https://get.starport.network/example/crypstarter@latest! | sudo bash
+curl https://get.starport.network/example/crypstarter_testnet@latest! | sudo bash
 ```
-`example/crypstarter` should match the `username` and `repo_name` of the Github repository to which the source code was pushed. Learn more about [the install process](https://github.com/allinbits/starport-installer).
+`example/crypstarter_testnet` should match the `username` and `repo_name` of the Github repository to which the source code was pushed. Learn more about [the install process](https://github.com/allinbits/starport-installer).
 
 ## Learn more
 

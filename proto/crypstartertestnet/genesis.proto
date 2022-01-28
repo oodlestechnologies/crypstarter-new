@@ -1,0 +1,11 @@
+syntax = "proto3";
+package example.crypstartertestnet.crypstartertestnet;
+
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "github.com/example/crypstarter_testnet/x/crypstartertestnet/types";
+
+// GenesisState defines the crypstartertestnet module's genesis state.
+message GenesisState {
+    // this line is used by starport scaffolding # genesis/proto/state
+}

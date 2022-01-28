@@ -86,17 +86,17 @@ import (
 	"github.com/tendermint/spm/cosmoscmd"
 	"github.com/tendermint/spm/openapiconsole"
 
-	"github.com/example/crypstarter/docs"
+	"github.com/example/crypstarter_testnet/docs"
 
-	crypstartermodule "github.com/example/crypstarter/x/crypstarter"
-	crypstartermodulekeeper "github.com/example/crypstarter/x/crypstarter/keeper"
-	crypstartermoduletypes "github.com/example/crypstarter/x/crypstarter/types"
+	crypstartertestnetmodule "github.com/example/crypstarter_testnet/x/crypstartertestnet"
+	crypstartertestnetmodulekeeper "github.com/example/crypstarter_testnet/x/crypstartertestnet/keeper"
+	crypstartertestnetmoduletypes "github.com/example/crypstarter_testnet/x/crypstartertestnet/types"
 	// this line is used by starport scaffolding # stargate/app/moduleImport
 )
 
 const (
 	AccountAddressPrefix = "cst"
-	Name                 = "crypstarter"
+	Name                 = "crypstarter_testnet"
 )
 
 // this line is used by starport scaffolding # stargate/wasm/app/enabledProposals
@@ -141,7 +141,7 @@ var (
 		evidence.AppModuleBasic{},
 		transfer.AppModuleBasic{},
 		vesting.AppModuleBasic{},
-		crypstartermodule.AppModuleBasic{},
+		crypstartertestnetmodule.AppModuleBasic{},
 		// this line is used by starport scaffolding # stargate/app/moduleBasic
 	)
 
@@ -210,7 +210,7 @@ type App struct {
 	ScopedIBCKeeper      capabilitykeeper.ScopedKeeper
 	ScopedTransferKeeper capabilitykeeper.ScopedKeeper
 
-	CrypstarterKeeper crypstartermodulekeeper.Keeper
+	CrypstartertestnetKeeper crypstartertestnetmodulekeeper.Keeper
 	// this line is used by starport scaffolding # stargate/app/keeperDeclaration
 
 	// the module manager
@@ -244,7 +244,7 @@ func New(
 		minttypes.StoreKey, distrtypes.StoreKey, slashingtypes.StoreKey,
 		govtypes.StoreKey, paramstypes.StoreKey, ibchost.StoreKey, upgradetypes.StoreKey, feegrant.StoreKey,
 		evidencetypes.StoreKey, ibctransfertypes.StoreKey, capabilitytypes.StoreKey,
-		crypstartermoduletypes.StoreKey,
+		crypstartertestnetmoduletypes.StoreKey,
 		// this line is used by starport scaffolding # stargate/app/storeKey
 	)
 	tkeys := sdk.NewTransientStoreKeys(paramstypes.TStoreKey)
@@ -343,12 +343,12 @@ func New(
 		&stakingKeeper, govRouter,
 	)
 
-	app.CrypstarterKeeper = *crypstartermodulekeeper.NewKeeper(
+	app.CrypstartertestnetKeeper = *crypstartertestnetmodulekeeper.NewKeeper(
 		appCodec,
-		keys[crypstartermoduletypes.StoreKey],
-		keys[crypstartermoduletypes.MemStoreKey],
+		keys[crypstartertestnetmoduletypes.StoreKey],
+		keys[crypstartertestnetmoduletypes.MemStoreKey],
 	)
-	crypstarterModule := crypstartermodule.NewAppModule(appCodec, app.CrypstarterKeeper)
+	crypstartertestnetModule := crypstartertestnetmodule.NewAppModule(appCodec, app.CrypstartertestnetKeeper)
 
 	// this line is used by starport scaffolding # stargate/app/keeperDefinition
 
@@ -388,7 +388,7 @@ func New(
 		ibc.NewAppModule(app.IBCKeeper),
 		params.NewAppModule(app.ParamsKeeper),
 		transferModule,
-		crypstarterModule,
+		crypstartertestnetModule,
 		// this line is used by starport scaffolding # stargate/app/appModule
 	)
 
@@ -423,7 +423,7 @@ func New(
 		genutiltypes.ModuleName,
 		evidencetypes.ModuleName,
 		ibctransfertypes.ModuleName,
-		crypstartermoduletypes.ModuleName,
+		crypstartertestnetmoduletypes.ModuleName,
 		// this line is used by starport scaffolding # stargate/app/initGenesis
 	)
 
@@ -611,7 +611,7 @@ func initParamsKeeper(appCodec codec.BinaryCodec, legacyAmino *codec.LegacyAmino
 	paramsKeeper.Subspace(crisistypes.ModuleName)
 	paramsKeeper.Subspace(ibctransfertypes.ModuleName)
 	paramsKeeper.Subspace(ibchost.ModuleName)
-	paramsKeeper.Subspace(crypstartermoduletypes.ModuleName)
+	paramsKeeper.Subspace(crypstartertestnetmoduletypes.ModuleName)
 	// this line is used by starport scaffolding # stargate/app/paramSubspace
 
 	return paramsKeeper
